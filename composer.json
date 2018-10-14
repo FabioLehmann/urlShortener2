@@ -1,0 +1,9 @@
+{
+    "require": {
+        "sensio/framework-extra-bundle": "^5.2",
+        "nelmio/cors-bundle": "^1.5",
+        "nelmio/api-doc-bundle": "^3.3",
+        "symfony/monolog-bundle": "^3.3",
+        "symfony/http-kernel": "^4.1"
+    }
+}

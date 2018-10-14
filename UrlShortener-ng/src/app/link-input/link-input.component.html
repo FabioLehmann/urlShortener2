@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit()">
+
+	<div class="form-group row justify-content-center" >
+  
+		<div class="col-4">
+			<div class="input-group mb-3">
+                <input class="form-control border-secondary py-2" type="text" [(ngModel)]="link.source" 
+				 id="linkInput" name="linkInput" placeholder="Enter the link to shorten">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary border-left-0" type="submit" style="background-color:white">
+                        <i class="fa fa-arrow-circle-right" style="color:#2EFEC8" ></i>
+                    </button>
+                </div>
+			</div>
+		</div>
+  
+	</div>
+</form>

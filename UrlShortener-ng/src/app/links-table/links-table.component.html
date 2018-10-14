@@ -1,0 +1,26 @@
+<div *ngIf="links">
+	<div class="card-group"  *ngFor="let data of links.data">
+		<div class="card mb-3 col-2 border-right-0" >
+			<div class="card-body text-center">
+				<p class="card-text" style="color:#2EFEC8">
+					{{data.uploaded_date}}</p>
+			</div>
+		</div>
+		<div class="card mb-3 col-5 border-right-0">
+			<div class="card-body text-center">
+				<p class="card-text" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{data.source}}" target="_blank">{{data.source}}</a></p>
+			</div>
+		</div>
+		<div class="card bg-light mb-3 col-1 border-right-0 ">
+			<div class="card-body text-center">
+				<p class="card-text"><i class="fa fa-arrow-right fa-2x" style="color:#848484"></i></p>
+			</div>
+		</div>
+		<div class="card mb-3 col-4">
+			<div class="card-body text-center">
+				<p class="card-text"><a href="{{data.target}}" target="_blank">{{data.target}}</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
