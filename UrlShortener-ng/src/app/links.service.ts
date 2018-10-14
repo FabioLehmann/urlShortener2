@@ -29,7 +29,7 @@ const httpOptions = {
 		) { }
 		/** GET links from the server */
 		getLinks (): Observable<Link[]> {
-			return this.http.get<Link[]>(this.linksUrl)
+			return this.http.get<Link[]>(this.linksUrl);
 	   
 		}
 	

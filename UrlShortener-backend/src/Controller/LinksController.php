@@ -85,14 +85,7 @@ from urls;';
 			$result[0]
 		)));
 		
-		
-		// $response = new Response();
-// 		$response->headers->set('Content-Type', 'application/json');
-// 		$response->headers->set('Access-Control-Allow-Origin', '*');
-// 	    $response->headers->set('Access-Control-Allow-Methods', 'GET,POST,PUT, DELETE');
-// 		$response->setStatusCode(Response::HTTP_OK);
-// 	    $response->headers->set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-		
+	
 
  		return $response;
  	}
@@ -119,13 +112,7 @@ from urls;';
 			$url = $result[0]['source'];	
 		}
 		$response = new Response();
-		$response->headers->set('Content-Type', 'application/json');
-		$response->headers->set('Access-Control-Allow-Origin', '*');
-	    // $response->headers->set('Access-Control-Allow-Methods', 'POST');
-	    $response->headers->set('Location', $url);
-		$response->setStatusCode(Response::HTTP_OK);
 		
-	    $response->headers->set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
 		
 		$response->setContent(json_encode(array(
 			'url' => $url
